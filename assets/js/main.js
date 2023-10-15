@@ -15,12 +15,15 @@ function convertPokemonToLi(pokemon) {
             <div class="detail">
                 <ol class="types">
                     ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
+                    <li class="type">Heigth: ${pokemon.height}</li>
+                    <li class="type">Weigth: ${pokemon.weight}</li>
                 </ol>
 
-                <a href="https://pokeapi.co/api/v2/${id}">
+                <a href="/details.html">
                     <img src="${pokemon.photo}" alt="${pokemon.name}">
                 </a>
             </div>
+
         </li>
     `
 }
